@@ -1,3 +1,4 @@
+
 :root {
     --primary: #101d3a;
     --accent: #f5b82e;
@@ -24,6 +25,8 @@ body {
     line-height: 1.6;
 }
 
+/* HEADER */
+
 header {
     background-color: var(--primary);
     color: var(--white);
@@ -40,6 +43,8 @@ header h1 {
 header p {
     font-size: 16px;
 }
+
+/* NAVIGATION */
 
 nav {
     background-color: var(--primary);
@@ -71,6 +76,8 @@ nav ul li a:hover {
     color: var(--accent);
 }
 
+/* SECTIONS */
+
 section {
     background-color: var(--white);
     width: 90%;
@@ -99,6 +106,8 @@ section p {
     margin-bottom: 15px;
 }
 
+/* HERO SECTION */
+
 .hero {
     background: linear-gradient(
         135deg,
@@ -120,6 +129,7 @@ section p {
 }
 
 .hero-content p {
+    color: var(--white);
     font-size: 20px;
     max-width: 700px;
     margin: 0 auto 25px;
@@ -148,6 +158,8 @@ section p {
     transform: scale(1.05);
 }
 
+/* TEAM LIST */
+
 .team-list {
     padding-left: 25px;
 }
@@ -156,6 +168,8 @@ section p {
     margin: 10px 0;
     font-size: 17px;
 }
+
+/* MATCH TABLE */
 
 .table-container {
     width: 100%;
@@ -187,6 +201,8 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
     background-color: #fff0c2;
 }
+
+/* BOOKING FORM */
 
 form {
     max-width: 600px;
@@ -226,6 +242,18 @@ select:focus {
     padding: 14px;
 }
 
+/* BOOKING SUMMARY */
+
+.summary {
+    background-color: #fff5d8;
+    border-left: 5px solid var(--accent);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+/* GUIDELINES */
+
 #guidelines {
     border-left: 5px solid var(--accent);
 }
@@ -237,6 +265,23 @@ select:focus {
 #guidelines ul li {
     margin: 10px 0;
 }
+
+/* GUIDELINE CARDS */
+
+.guideline-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #f4f6fa;
+    padding: 20px;
+    border-radius: 8px;
+    border-top: 4px solid var(--accent);
+}
+
+/* FOOTER */
 
 footer {
     background-color: var(--primary);
@@ -250,7 +295,10 @@ footer p {
     margin: 5px;
 }
 
+/* TABLET RESPONSIVE */
+
 @media screen and (max-width: 768px) {
+
     header h1 {
         font-size: 25px;
     }
@@ -275,9 +323,16 @@ footer p {
     .hero-content p {
         font-size: 17px;
     }
+
+    .guideline-cards {
+        grid-template-columns: 1fr;
+    }
 }
 
+/* MOBILE RESPONSIVE */
+
 @media screen and (max-width: 480px) {
+
     header h1 {
         font-size: 21px;
     }
